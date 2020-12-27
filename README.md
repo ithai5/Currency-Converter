@@ -1,4 +1,4 @@
-# myfirstvueproject
+Currency Converter
 
 ## Project setup
 ```
