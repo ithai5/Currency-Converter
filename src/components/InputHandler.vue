@@ -20,7 +20,7 @@
           </datalist>
         </label>
         <br><br>
-        <input type="submit" value="submit" class="btn">
+        <input type="submit" value="Calculate" class="btn">
 
       </div>
     </form>
@@ -87,6 +87,16 @@ export default {
   height: 48px;
   left: 637px;
   top: 287px;
+  font-family: Roboto,serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+
+  color: #FFFFFF;
+
 
   background: #599210;
   border: 1px solid #599210;

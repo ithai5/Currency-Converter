@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <InputHandler v-on:change-info="calculateFiat"/>
-    <div id="result">
+    <div id="result" v-if="rate!==null">
     {{rate}}
     </div>
 

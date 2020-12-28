@@ -1,10 +1,10 @@
 <template >
   <div id="app">
-    <div class="container" >
+
       <Header class="header"></Header>
       <BodyContent></BodyContent>
       <Footer></Footer>
-    </div>
+
   </div>
 </template>
 
@@ -26,10 +26,10 @@ export default {
 <!-- global css -->
 <style>
 .container{
-  text-align: center;
+
 }
 #app {
-
+  text-align: center;
   height: 900px;
   left: 351px;
   top: 0px;
