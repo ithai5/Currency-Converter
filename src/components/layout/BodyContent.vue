@@ -1,10 +1,12 @@
 <template>
-  <div class="container">
+  <div>
     <InputHandler v-on:change-info="calculateFiat"/>
-    <div id="result" v-if="rate!==null">
-    {{rate}}
+    <div>
+    <div class="input-collect" id="result" v-if="rate!==null">
+    {{rate.toFixed(numberAfterDot)}} {{faitTo}}
     </div>
 
+  </div>
   </div>
 </template>
 
@@ -19,17 +21,17 @@
     data() {
       return {
         rate: null,
-        faitUsd:null,
-        cryptoUsd:null,
+        faitTo:null,
         apis:[ //can add more api following by fitting the api address with base and to currencies.
           ((base,to)=>'https://api.exchangeratesapi.io/latest?base='+base+'&symbols='+to),
           ((base,to)=>'https://api.binance.com/api/v3/ticker/price?symbol='+base+to),
         ],
-        numberAfterDot:5
+        numberAfterDot:3,
       }
     },
     methods: {
       async calculateFiat(info) {
+        this.faitTo=info.cTo
         this.rate=''
         let num
         let res = null
@@ -86,29 +88,26 @@
 <style scoped>
 
 #result{
-  position: fixed;
-  width: 453px;
-  height: 54px;
-  left: 486px;
-  top: 386px;
-
 
   background: #FFFFFF;
   border: 1px solid #D0D0D0;
   box-sizing: border-box;
   border-radius: 32px;
-
-
+  margin: 40px;
+  padding: 10px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
 
+  display: inline-grid;
+  width: 30%;
 
   color: #939393;
 
 }
+
 
 
 </style>

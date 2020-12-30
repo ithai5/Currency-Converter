@@ -31,17 +31,23 @@ export default {
 #app {
   text-align: center;
   height: 900px;
-  left: 351px;
   top: 0px;
   background-color: #e9e9e9;
 }
+.inputBox{
+  height: 38px;
+  top: 198px;
 
+  background: #FFFFFF;
+  border: 1px solid #D0D0D0;
+  box-sizing: border-box;
+  border-radius: 32px;
+
+}
 
 .header{
   position: relative;
-  width: 738px;
   height: 159px;
-  left: 351px;
   top: 0px;
 
   background: linear-gradient(180deg, #A7CDE9 0%, #8CB3CF 85.89%);

@@ -85,7 +85,6 @@ export default {
   cursor: pointer;
   width: 166px;
   height: 48px;
-  left: 637px;
   top: 287px;
   font-family: Roboto,serif;
   font-style: normal;
@@ -106,25 +105,13 @@ export default {
 }
 .collect-input{
   position: fixed;
-  width: 577px;
   height: 38px;
-  left: 432px;
   top: 198px;
+  display: contents;
 }
 
 
-.inputBox{
-  width: 179px;
-  height: 38px;
-  left: 432px;
-  top: 198px;
 
-  background: #FFFFFF;
-  border: 1px solid #D0D0D0;
-  box-sizing: border-box;
-  border-radius: 32px;
-
-}
 
 
 
