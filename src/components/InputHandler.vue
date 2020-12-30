@@ -69,7 +69,7 @@ export default {
             })
             .catch(err => console.log(err))
     axios
-        .get('https://api.exchangeratesapi.io/latest?')//getting a list of all fait currencies
+        .get('https://api.exchangeratesapi.io/latest?base=USD')//getting a list of all fait currencies
         .then(res => {
           const faitCurrencies = Object.keys(res.data['rates'])
           faitCurrencies.map(currency=>this.currencies.push(currency))
